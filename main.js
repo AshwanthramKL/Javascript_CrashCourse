@@ -1,8 +1,11 @@
-// variable types: var, const, const
-// Try to use const by default unless you know you are going to change it
-const a = 10;
+// datatypes
 
-console.log(a);
-a = 20;
+const name = 'John Doe';
+const age = 23;
+const rating = 5.9;
+const isCool = true;
+const x = undefined;
+const y = null;
 
-console.log(a)
+
+console.log(typeof y)
