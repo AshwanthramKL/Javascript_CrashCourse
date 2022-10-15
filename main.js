@@ -1,20 +1,12 @@
-//Strings
+// Arrays
 
-const name = 'jon';
-const age = 30;
+const fruits = ['apples', 'oranges', 'mangoes'];
 
-// Concatenation
+fruits.push('grapes');
+console.log(fruits[fruits.length-1]);
 
-console.log('My name is '+name+' and I am '+age+' years old');
+fruits.unshift('bananas');
+console.log(fruits);
 
-// Template strings
-
-let y = `My name is ${name} and I am ${age} years old`;
-
-console.log(y.toUpperCase())
-
-const names = 'jon, max, carl, mark, zach';
-
-let x = names.split(', ')
-
-console.log(x);
+fruits.pop()
+console.log(Array.isArray(fruits))
