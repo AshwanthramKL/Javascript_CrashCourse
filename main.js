@@ -1,12 +1,19 @@
-// Arrays
+// Objects
 
-const fruits = ['apples', 'oranges', 'mangoes'];
+const person = [{
+    firstName: 'Mark',
+    lastName: 'Zuckerberg',
+    age: 23,
+    hobbies: ['mma', 'fencing']
+}, 
+{
+    firstName: 'Max',
+    lastName: 'Levchin',
+    age: 25,
+    hobbies: ['yoga', 'boxing']
+}]
 
-fruits.push('grapes');
-console.log(fruits[fruits.length-1]);
 
-fruits.unshift('bananas');
-console.log(fruits);
+const personJSON = JSON.stringify(person);
 
-fruits.pop()
-console.log(Array.isArray(fruits))
+console.log(personJSON);
