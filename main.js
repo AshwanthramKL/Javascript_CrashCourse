@@ -1,7 +1,26 @@
 // Conditionals
 
-const x = 'asdf';
+const x = 321;
 
-const y = x === 321 ? true: false;
+let y = x === 321 ? 'red': 'yellow';
 
-console.log(y);
+switch(y)
+{
+    case 'red':
+        {
+        console.log('color is red');
+        break;
+        }
+    case 'yellow':
+        {
+        console.log('color is yellow');
+        break;
+        }
+    
+    default:
+        {
+            console.log("Neither red nor yellow")
+            break;
+        }
+    }
+
