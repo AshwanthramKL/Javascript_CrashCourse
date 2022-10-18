@@ -1,12 +1,7 @@
 // Conditionals
 
-const x = true;
-const y = 'a'
+const x = 'asdf';
 
-if( !x === false && y === 'a'){
-    console.log("Poooi oombu");
-}
+const y = x === 321 ? true: false;
 
-else{
-    console.log("Sup?");
-}
+console.log(y);
