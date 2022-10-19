@@ -1,26 +1,8 @@
-// Conditionals
+// functions
 
-const x = 321;
+const printNums = (a = 421, b=73) => {
+    console.log(`${a} and ${b}`)
+}
 
-let y = x === 321 ? 'red': 'yellow';
 
-switch(y)
-{
-    case 'red':
-        {
-        console.log('color is red');
-        break;
-        }
-    case 'yellow':
-        {
-        console.log('color is yellow');
-        break;
-        }
-    
-    default:
-        {
-            console.log("Neither red nor yellow")
-            break;
-        }
-    }
-
+printNums(1);
