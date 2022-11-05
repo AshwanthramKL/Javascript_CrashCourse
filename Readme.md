@@ -1,6 +1,7 @@
 # Javascript Crash Course
 
-Source : [Traversy Media Video](https://youtu.be/hdI2bqOjy3c)  
+Source :
+<a href="https://youtu.be/hdI2bqOjy3c" target="_blank">Traversy Media Video</a>
 
 Built a basic input form.  
 
