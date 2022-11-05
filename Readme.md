@@ -1,4 +1,4 @@
-# Javascript Crashcourse
+# Javascript Crash Course
 
 Source : [Traversy Media Video](https://youtu.be/hdI2bqOjy3c)  
 
