@@ -1,19 +1,23 @@
-// Single element selectors
+// DOM manipulation
 
-// const form = document.getElementById('my-form');
+const ul = document.querySelector('.items');
 
-// console.log(form);
+console.log(ul)
+// ul.lastElementChild.remove();
+// ul.lastElementChild.remove();
+// ul.lastElementChild.remove();
 
-// console.log(document.querySelector('h1'));
+ul.firstElementChild.textContent = 'Hello world';
 
-// console.log(document.querySelectorAll('.item')); // Can use array methods
+ul.children[1].innerText = 'Mark';
+ul.children[1].style.background = 'black';
 
-// console.log(document.getElementsByClassName('item'));// Can't use array methods
+ul.children[1].style.color = 'orange';
 
-// console.log(document.getElementsByTagName('li'))
 
-const items = document.querySelectorAll('.item');
 
-items.forEach((item) => {
-    console.log(item);
-})
+ul.lastElementChild.innerHTML = '<h1>Dummy text</h1><p> aklsdjfklhjweiohfio iasdOHJFIOAWEHIOFAS DLIFJIASD FJOIj sidjfai k</p>'
+
+button = document.querySelector('.btn');
+
+button.style.background = 'green'
