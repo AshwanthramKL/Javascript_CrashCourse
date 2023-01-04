@@ -21,3 +21,4 @@ Brushed up on concepts such as:
 * DOM selection
 * DOM manipulation
 * Events
+* Spread and Rest operator
