@@ -1,59 +1,64 @@
-// Rest Operator expands elements of an array
-var certsToAdd = ['Algorithms and DS', 'frontend'];
+// Arrow function
 
-var certfications = ['Data Visualisation', ...certsToAdd, 'Responsive Web Design'];
-// ... is the spread operator, it spreads the elements in the certsToAdd array as individual elements in cerifications array rather than as an array.
-
-console.log(certfications)
-
-
-// pass elements as arguments to functions
-
-function addThreeNos(x, y, z)
-{
-    console.log(x+y+z);
+function sum(a,b){ // 2 args
+    return a+b;
 }
 
-var args = [1,3,2,5];
-addThreeNos(...args); // though there are 4 elements, it only takes first 3 and igonores the 4th
-
-// copy arrays
-
-var arr = [1,3,2,3]
-var arr2 = [...arr]
-var arr3 = arr
-console.log('before:\n', arr);
-console.log(arr2);
-console.log(arr3);
-
-arr2.push(4);
-console.log('after arr2 push:\n', arr);
-console.log(arr2);
-console.log(arr3);
-
-arr3.push(4);// here arr3 references arr
-console.log('after arr3 push:\n', arr);
-console.log(arr2);
-console.log(arr3);
-
-// concatenate arrays
-
-var arrA = [1,2,3,4];
-var arrB = [5,6,7,8];
-
-arrA = [...arrA, 0,...arrB];
-console.log('After concatenation:', arrA);
-// Gives more flexibilty than the concat()
-
-// Rest Operator condenses multiple elements into an array
-
-function multiply(multiplier, ...theArgs)
-{
-    return theArgs.map(function(ele){
-        return ele * multiplier;
-    });
-
+// Arrow representation of the above function
+let sum2 = (a,b) => {
+    return a+b;
 }
 
-var arr = multiply(2,1,3,4);
-console.log('Rest operator:\n', arr);
+function isPositive(number){ // 1 args
+    return number>=0;
+}
+
+// Arrow representation of the above function
+let isPositive2 = num => num>=0;
+
+function randomNumber(){ // 0 args
+    return Math.random
+}
+
+// Arrow representation of the above function
+let randomNumber2 = () => Math.random
+
+document.addEventListener('click', function(){ // Anonymous functions, best use case for arrow functions
+    console.log('click');
+})
+
+// Arrow representation of the above function
+document.addEventListener('click', () => console.log('click'))
+
+
+// Whats truly interesting about arrow functions is their use of this keyword.
+
+
+class Person
+{
+    constructor(name)
+    {
+        this.name = name;
+    }
+
+    printNameArrow()
+    {
+        setTimeout(()=>{
+            console.log('Arrow: '+this.name) // this within the scope of arrow function
+        }, 100)
+    }
+
+    printNameFunction()
+    {
+        setTimeout(function(){
+            console.log('Function: '+this.name) // this is of global scope becuase it is called in line 62 which is of global scope
+        }, 100)
+    }
+}
+
+let person = new Person('Zach');
+
+person.printNameArrow();
+person.printNameFunction();
+
+console.log(this.name) // this is of global scope
