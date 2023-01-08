@@ -61,22 +61,41 @@
 
 // QuerySelector - Works pretty much like jquery
 
-var header = document.querySelector('#main-header'); // can pass any css query as parameter
+// var header = document.querySelector('#main-header'); // can pass any css query as parameter
 
-header.style.borderBottom = 'solid 4px #ccc';
+// header.style.borderBottom = 'solid 4px #ccc';
 
-var input = document.querySelector('input'); // grabs only the first one
+// var input = document.querySelector('input'); // grabs only the first one
 
-input.value = 'Hello World';
+// input.value = 'Hello World';
 
-var submit = document.querySelector('input[type="submit"]');
-submit.value = 'SEND';
+// var submit = document.querySelector('input[type="submit"]');
+// submit.value = 'SEND';
 
-var item = document.querySelector('.list-group-item');
-item.style.color = 'red';
+// var item = document.querySelector('.list-group-item');
+// item.style.color = 'red';
 
-var lastItem = document.querySelector('.list-group-item:last-child');
-lastItem.style.color = 'blue';
+// var lastItem = document.querySelector('.list-group-item:last-child');
+// lastItem.style.color = 'blue';
 
-var secondItem = document.querySelector('.list-group-item:nth-child(2)');
-secondItem.style.color = 'brown';
+// var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.color = 'brown';
+
+
+// querySelectorAll
+
+var titles = document.querySelectorAll('.title');
+console.log(titles);
+
+titles[0].textContent = 'New title';
+
+var oddList = document.querySelectorAll('li:nth-child(odd)');
+var evenList = document.querySelectorAll('li:nth-child(even)');
+
+
+for(var i = 0; i<oddList.length; i++)
+{
+    oddList[i].style.backgroundColor = '#f4f4f4';
+    evenList[i].style.backgroundColor = '#ccc';
+
+}
