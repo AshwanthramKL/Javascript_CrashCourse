@@ -1,7 +1,8 @@
 # Javascript Crash Course
 
-Source :
-<a href="https://youtu.be/hdI2bqOjy3c" target="_blank">Traversy Media Video</a>
+Source :  
+<a href="https://youtu.be/hdI2bqOjy3c" target="_blank">Traversy Media Video</a>  
+<a href="https://www.youtube.com/playlist?list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX" target="_blank">Traversy Media Playlist</a>
 
 Built a basic input form.  
 
