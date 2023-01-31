@@ -184,9 +184,19 @@ newDiv.id = 'Hello1';
 newDiv.setAttribute('title', 'hello div');
 // add text using textNode
 
-var newDivText = document.createTextNode('Hellow World');
+var newDivText = document.createTextNode('Hello World');
 
 // add text to div
 
 newDiv.appendChild(newDivText);
 console.log(newDiv);
+
+
+// insert created elements into DOM
+
+var header_container = document.querySelector('header .container');
+// console.log(header_container);
+var heading1 = document.querySelector('header h1');
+console.log(heading1);
+
+header_container.insertBefore(newDiv, heading1);
