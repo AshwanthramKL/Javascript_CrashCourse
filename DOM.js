@@ -163,5 +163,30 @@ console.log(itemList)
 
 // previousElementSibling
 
-console.log(itemList.previousElementSibling)
-itemList.previousElementSibling.style.backgroundColor = '#f3a4e1';
+// console.log(itemList.previousElementSibling)
+// itemList.previousElementSibling.style.backgroundColor = '#f3a4e1';
+
+// CREATING ELEMENTS
+
+// createElement
+
+var newDiv = document.createElement('div');
+// console.log(newDiv);
+
+// add class
+newDiv.className = 'Hello';
+
+// add id
+newDiv.id = 'Hello1';
+
+// add title
+
+newDiv.setAttribute('title', 'hello div');
+// add text using textNode
+
+var newDivText = document.createTextNode('Hellow World');
+
+// add text to div
+
+newDiv.appendChild(newDivText);
+console.log(newDiv);
