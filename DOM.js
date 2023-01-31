@@ -199,4 +199,8 @@ var header_container = document.querySelector('header .container');
 var heading1 = document.querySelector('header h1');
 console.log(heading1);
 
+newDiv.style.fontSize = '25px';
+newDiv.style.color = 'Orange';
+
 header_container.insertBefore(newDiv, heading1);
+
