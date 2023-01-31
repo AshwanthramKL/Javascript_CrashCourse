@@ -84,18 +84,36 @@
 
 // querySelectorAll
 
-var titles = document.querySelectorAll('.title');
-console.log(titles);
+// var titles = document.querySelectorAll('.title');
+// console.log(titles);
 
-titles[0].textContent = 'New title';
+// titles[0].textContent = 'New title';
 
-var oddList = document.querySelectorAll('li:nth-child(odd)');
-var evenList = document.querySelectorAll('li:nth-child(even)');
+// var oddList = document.querySelectorAll('li:nth-child(odd)');
+// var evenList = document.querySelectorAll('li:nth-child(even)');
 
 
-for(var i = 0; i<oddList.length; i++)
-{
-    oddList[i].style.backgroundColor = '#f4f4f4';
-    evenList[i].style.backgroundColor = '#ccc';
+// for(var i = 0; i<oddList.length; i++)
+// {
+//     oddList[i].style.backgroundColor = '#f4f4f4';
+//     evenList[i].style.backgroundColor = '#ccc';
 
-}
+// }
+
+// Traversing the DOM
+
+const itemList = document.querySelector('#items')
+console.log(itemList)
+
+// parentNode
+
+// console.log(itemList.parentNode)
+// itemList.parentNode.style.backgroundColor = '#f4f4f4';
+// console.log(itemList.parentNode.parentNode.parentNode)
+
+// parentElement - For the most part is the same as parentNode
+
+console.log(itemList.parentElement)
+itemList.parentElement.style.backgroundColor = '#f4f4f4';
+console.log(itemList.parentElement.parentElement.parentElement)
+
