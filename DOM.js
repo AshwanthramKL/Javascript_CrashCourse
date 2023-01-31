@@ -107,13 +107,42 @@ console.log(itemList)
 
 // parentNode
 
-// console.log(itemList.parentNode)
+// console.log(itemList.parentNode);
 // itemList.parentNode.style.backgroundColor = '#f4f4f4';
-// console.log(itemList.parentNode.parentNode.parentNode)
+// console.log(itemList.parentNode.parentNode.parentNode);
 
 // parentElement - For the most part is the same as parentNode
 
-console.log(itemList.parentElement)
-itemList.parentElement.style.backgroundColor = '#f4f4f4';
-console.log(itemList.parentElement.parentElement.parentElement)
+// console.log(itemList.parentElement);
+// itemList.parentElement.style.backgroundColor = '#f4f4f4';
+// console.log(itemList.parentElement.parentElement.parentElement);
 
+// childNode - kinda useless as it takes line breaks into consideration
+
+// console.log(itemList.childNodes);
+// console.log(itemList.childNodes[1])
+
+// itemList.childNodes[1].style.backgroundColor = 'maroon';
+// console.log(itemList.childNodes[1].childNodes[0]);
+
+// itemList.childNodes[1].childNodes[0].textContent = 'white';
+
+// firstChild - kinda useless as it takes line breaks into consideration
+
+// console.log(itemList.firstChild)
+// itemList.firstChild.textContent = 'surprise';
+
+// firstElementChild
+
+// console.log(itemList.firstElementChild)
+// itemList.firstElementChild.style.backgroundColor = '#f4f4f4';
+
+// lastChild - kinda useless as it takes line breaks into consideration
+
+// console.log(itemList.lastChild);
+// itemList.lastChild.textContent = 'asdfs';
+
+// lastElementChild
+
+console.log(itemList.lastElementChild);
+itemList.lastElementChild.textContent = 'Here we are';
