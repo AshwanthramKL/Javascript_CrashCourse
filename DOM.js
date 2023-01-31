@@ -144,5 +144,24 @@ console.log(itemList)
 
 // lastElementChild
 
-console.log(itemList.lastElementChild);
-itemList.lastElementChild.textContent = 'Here we are';
+// console.log(itemList.lastElementChild);
+// itemList.lastElementChild.textContent = 'Here we are';
+
+
+// nextSibling - kinda useless as it takes line breaks into consideration
+
+// console.log(itemList.nextSibling)
+
+// nextElementSibling
+
+// console.log(itemList.nextElementSibling);
+
+// itemList.nextElementSibling.textContent = 'Surprise';
+
+// previousSibling - kinda useless as it takes line breaks into consideration
+// console.log(itemList.previousSibling)
+
+// previousElementSibling
+
+console.log(itemList.previousElementSibling)
+itemList.previousElementSibling.style.backgroundColor = '#f3a4e1';
