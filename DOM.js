@@ -170,37 +170,55 @@ console.log(itemList)
 
 // createElement
 
-var newDiv = document.createElement('div');
+// var newDiv = document.createElement('div');
+// // console.log(newDiv);
+
+// // add class
+// newDiv.className = 'Hello';
+
+// // add id
+// newDiv.id = 'Hello1';
+
+// // add title
+
+// newDiv.setAttribute('title', 'hello div');
+// // add text using textNode
+
+// var newDivText = document.createTextNode('Hello World');
+
+// // add text to div
+
+// newDiv.appendChild(newDivText);
 // console.log(newDiv);
 
-// add class
-newDiv.className = 'Hello';
 
-// add id
-newDiv.id = 'Hello1';
+// // insert created elements into DOM
 
-// add title
+// var header_container = document.querySelector('header .container');
+// // console.log(header_container);
+// var heading1 = document.querySelector('header h1');
+// console.log(heading1);
 
-newDiv.setAttribute('title', 'hello div');
-// add text using textNode
+// newDiv.style.fontSize = '25px';
+// newDiv.style.color = 'Orange';
 
-var newDivText = document.createTextNode('Hello World');
+// header_container.insertBefore(newDiv, heading1);
 
-// add text to div
+// EventListener
+var button = document.querySelector('#button');
 
-newDiv.appendChild(newDivText);
-console.log(newDiv);
+// button.addEventListener('click', function() {
+//     document.querySelector('#header-title').textContent = 'Dandanaka';
+//     document.body.style.backgroundColor = '#f6a3f4';
+// });
 
+button.addEventListener('click', ButtonClick);
+var x = 0;
+function ButtonClick(e){
+    console.log(e.target);
+    console.log(e.target.id);
+    console.log(e.target.classList[0]);
 
-// insert created elements into DOM
-
-var header_container = document.querySelector('header .container');
-// console.log(header_container);
-var heading1 = document.querySelector('header h1');
-console.log(heading1);
-
-newDiv.style.fontSize = '25px';
-newDiv.style.color = 'Orange';
-
-header_container.insertBefore(newDiv, heading1);
-
+    var output = document.querySelector('#output');
+    output.innerHTML = `${e.target.id} is clicked ${x++} times`;
+}
