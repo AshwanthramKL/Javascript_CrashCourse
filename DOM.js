@@ -221,7 +221,7 @@ console.log(itemList)
 //     console.log(e.target.id);
 //     console.log(e.target.classList[0]);
 
-//     var output = document.querySelector('#output');
+    var output = document.querySelector('#output');
 //     output.innerHTML = `${e.target.id} is clicked ${x++} times`;
 
 //     console.log(e.type);
@@ -238,21 +238,32 @@ console.log(itemList)
 
 // }
 
-var button = document.querySelector('#button');
-var box = document.querySelector('#box');
+// var button = document.querySelector('#button');
+// var box = document.querySelector('#box');
 // button.addEventListener('click', runEvent );
 // button.addEventListener('dblclick', runEvent );
 // button.addEventListener('mousedown', runEvent );
 // button.addEventListener('mouseup', runEvent );
 
 // over entire div
-box.addEventListener('mouseenter', runEvent);
-box.addEventListener('mouseleave', runEvent);
+// box.addEventListener('mouseenter', runEvent);
+// box.addEventListener('mouseleave', runEvent);
 
 // over the contents of the div such as heading, text etc...
-box.addEventListener('mouseover', runEvent);
-box.addEventListener('mouseout', runEvent)
+// box.addEventListener('mouseover', runEvent);
+// box.addEventListener('mouseout', runEvent)
 
-function runEvent(e){
-    console.log(`Event type : ${e.type}`);
-}
+
+// disco div
+// document.body.addEventListener('mousemove', runEvent);
+// dummy_heading = document.querySelector('#heading-dummy');
+// console.log(dummy_heading)
+// function runEvent(e){
+//     console.log(`Event type : ${e.type}`);
+
+//     // output.innerHTML = '<h3>MouseX: '+e.offsetX+'</h3><br><h3>MouseY: '+e.offsetY+'</h3>';
+//     dummy_heading.style.color = "white";
+//     box.style.backgroundColor = "rgb("+e.offsetX+", "+e.offsetY+", 35)";
+
+// }
+
