@@ -254,16 +254,38 @@ console.log(itemList)
 // box.addEventListener('mouseout', runEvent)
 
 
-// disco div
 // document.body.addEventListener('mousemove', runEvent);
 // dummy_heading = document.querySelector('#heading-dummy');
 // console.log(dummy_heading)
-// function runEvent(e){
-//     console.log(`Event type : ${e.type}`);
 
-//     // output.innerHTML = '<h3>MouseX: '+e.offsetX+'</h3><br><h3>MouseY: '+e.offsetY+'</h3>';
-//     dummy_heading.style.color = "white";
-//     box.style.backgroundColor = "rgb("+e.offsetX+", "+e.offsetY+", 35)";
+// Keyboard input
 
-// }
+var itemInput = document.querySelector('input[type="text"]');
+var my_form = document.querySelector('form');
+
+// itemInput.addEventListener('keydown', runEvent);
+// itemInput.addEventListener('keyup', runEvent);
+// itemInput.addEventListener('keypress', runEvent);
+
+// itemInput.addEventListener('focus', runEvent);
+// itemInput.addEventListener('blur', runEvent);
+
+// itemInput.addEventListener('cut', runEvent);
+// itemInput.addEventListener('copy', runEvent);
+// itemInput.addEventListener('paste', runEvent);
+
+
+function runEvent(e){
+    console.log(`Event type : ${e.type}`);
+
+    // disco div
+    // output.innerHTML = '<h3>MouseX: '+e.offsetX+'</h3><br><h3>MouseY: '+e.offsetY+'</h3>';
+    // dummy_heading.style.color = "white";
+    // box.style.backgroundColor = "rgb("+e.offsetX+", "+e.offsetY+", 35)";
+
+    // console.log(e.target.value);
+    // output.innerHTML = '<h3>'+e.target.value+'</h3>'; 
+
+    // document.body.style.display = "none"; // sema fun
+}
 
