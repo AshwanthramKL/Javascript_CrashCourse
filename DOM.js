@@ -262,6 +262,7 @@ console.log(itemList)
 
 var itemInput = document.querySelector('input[type="text"]');
 var my_form = document.querySelector('form');
+var my_select = document.querySelector('select');
 
 // itemInput.addEventListener('keydown', runEvent);
 // itemInput.addEventListener('keyup', runEvent);
@@ -274,8 +275,14 @@ var my_form = document.querySelector('form');
 // itemInput.addEventListener('copy', runEvent);
 // itemInput.addEventListener('paste', runEvent);
 
+// itemInput.addEventListener('input', runEvent);
 
+// my_select.addEventListener('change', runEvent);
+// my_select.addEventListener('input', runEvent);
+
+my_form.addEventListener('submit', runEvent);
 function runEvent(e){
+    e.preventDefault();
     console.log(`Event type : ${e.type}`);
 
     // disco div
@@ -283,8 +290,8 @@ function runEvent(e){
     // dummy_heading.style.color = "white";
     // box.style.backgroundColor = "rgb("+e.offsetX+", "+e.offsetY+", 35)";
 
-    // console.log(e.target.value);
-    // output.innerHTML = '<h3>'+e.target.value+'</h3>'; 
+    console.log(e.target.value);
+    output.innerHTML = '<h3>'+e.target.value+'</h3>'; 
 
     // document.body.style.display = "none"; // sema fun
 }
