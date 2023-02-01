@@ -171,31 +171,31 @@ console.log(itemList)
 // createElement
 
 // var newDiv = document.createElement('div');
-// // console.log(newDiv);
+// console.log(newDiv);
 
-// // add class
+// add class
 // newDiv.className = 'Hello';
 
-// // add id
+// add id
 // newDiv.id = 'Hello1';
 
-// // add title
+// add title
 
 // newDiv.setAttribute('title', 'hello div');
-// // add text using textNode
+// add text using textNode
 
 // var newDivText = document.createTextNode('Hello World');
 
-// // add text to div
+// add text to div
 
 // newDiv.appendChild(newDivText);
 // console.log(newDiv);
 
 
-// // insert created elements into DOM
+// insert created elements into DOM
 
 // var header_container = document.querySelector('header .container');
-// // console.log(header_container);
+// console.log(header_container);
 // var heading1 = document.querySelector('header h1');
 // console.log(heading1);
 
@@ -204,21 +204,37 @@ console.log(itemList)
 
 // header_container.insertBefore(newDiv, heading1);
 
+// EVENTS
+
 // EventListener
-var button = document.querySelector('#button');
+// var button = document.querySelector('#button');
 
 // button.addEventListener('click', function() {
-//     document.querySelector('#header-title').textContent = 'Dandanaka';
-//     document.body.style.backgroundColor = '#f6a3f4';
+// document.querySelector('#header-title').textContent = 'Dandanaka';
+// document.body.style.backgroundColor = '#f6a3f4';
 // });
 
-button.addEventListener('click', ButtonClick);
-var x = 0;
-function ButtonClick(e){
-    console.log(e.target);
-    console.log(e.target.id);
-    console.log(e.target.classList[0]);
+// button.addEventListener('click', ButtonClick);
+// var x = 0;
+// function ButtonClick(e){
+//     console.log(e.target);
+//     console.log(e.target.id);
+//     console.log(e.target.classList[0]);
 
-    var output = document.querySelector('#output');
-    output.innerHTML = `${e.target.id} is clicked ${x++} times`;
-}
+//     var output = document.querySelector('#output');
+//     output.innerHTML = `${e.target.id} is clicked ${x++} times`;
+
+//     console.log(e.type);
+
+//     offset - distance from the element borders
+//     console.log(e.offsetX, e.offsetY);
+
+//     client - distance from the browser window
+//      console.log(e.clientX, e.clientY);
+
+//     console.log(e.altKey);
+//     console.log(e.ctrlKey);
+//     console.log(e.shiftKey);
+
+// }
+
