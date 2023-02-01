@@ -238,3 +238,21 @@ console.log(itemList)
 
 // }
 
+var button = document.querySelector('#button');
+var box = document.querySelector('#box');
+// button.addEventListener('click', runEvent );
+// button.addEventListener('dblclick', runEvent );
+// button.addEventListener('mousedown', runEvent );
+// button.addEventListener('mouseup', runEvent );
+
+// over entire div
+box.addEventListener('mouseenter', runEvent);
+box.addEventListener('mouseleave', runEvent);
+
+// over the contents of the div such as heading, text etc...
+box.addEventListener('mouseover', runEvent);
+box.addEventListener('mouseout', runEvent)
+
+function runEvent(e){
+    console.log(`Event type : ${e.type}`);
+}
