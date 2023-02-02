@@ -1,12 +1,16 @@
 # Javascript Crash Course
 
-Source :  
+Built a basic input form with the following features:
+
+* addition of elements
+* deletion of elements
+* filter elements by name
+
+## Source :  
 <a href="https://youtu.be/hdI2bqOjy3c" target="_blank">Traversy Media Video</a>  
 <a href="https://www.youtube.com/playlist?list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX" target="_blank">Traversy Media Playlist</a>
 
-Built a basic input form.  
-
-Brushed up on concepts such as:
+## Brushed up on concepts such as:
 * Basic Datatypes
 * Strings and String methods
 * Arrays
@@ -23,3 +27,13 @@ Brushed up on concepts such as:
 * DOM manipulation
 * Events
 * Spread and Rest operator
+
+## Website
+
+![website preview](./images/website_overview.jpg)
+
+![addition of element](./images/new_addition.jpg)  
+
+![deletion of element](./images/delete_element.jpg)
+
+![filtering elements using name](./images/filter_element.jpg)
