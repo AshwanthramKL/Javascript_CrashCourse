@@ -301,13 +301,16 @@
 
 var itemList = document.querySelector('#items');
 var myForm = document.querySelector('#addForm');
+var filter = document.querySelector('#filter');
 
 // form submit event
 myForm.addEventListener('submit', addItem);
 
-// delete even
-
+// delete event
 itemList.addEventListener('click', deleteItem);
+
+// search event
+filter.addEventListener('keyup', filterItem);
 
 function addItem(e){
     e.preventDefault();
@@ -342,5 +345,27 @@ function deleteItem(e){
             itemList.removeChild(li);
         }
     }
+}
+
+function filterItem(e)
+{
+    // get input text and convert it to lowercase
+    var text = e.target.value.toLowerCase();
+    
+    // get elements
+    var items = document.getElementsByTagName('li');
+
+    Array.from(items).forEach(function (item){
+        var itemName = item.firstChild.textContent;
+
+        if(itemName.toLocaleLowerCase().indexOf(text) != -1)
+        {
+            item.style.display = 'block';
+        }
+        else
+        {
+            item.style.display = 'none';
+        }
+    });
 
 }
