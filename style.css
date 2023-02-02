@@ -9,28 +9,19 @@
     line-height: 1.6;
   }
   
-  ul {
-    list-style: none;
-  }
-  
+/*   
   ul li {
     padding: 5px;
     background: #f4f4f4;
     margin: 5px 0;
   }
-  
+   */
   header {
     background: #f4f4f4;
     padding: 1rem;
     text-align: center;
   }
-  
-  .container {
-    margin: auto;
-    width: 500px;
-    overflow: auto;
-    padding: 3rem 2rem;
-  }
+
   
   #my-form {
     padding: 2rem;
@@ -48,7 +39,7 @@
     border-radius: 5px;
     border: 1px solid #ccc;
   }
-  
+/*   
   .btn {
     display: block;
     width: 100%;
@@ -59,19 +50,8 @@
     border-radius: 5px;
     margin: 5px 0;
   }
-  
-  .btn:hover {
-    background: #444;
-  }
-  
-  .bg-dark {
-    background: #333;
-    color: purple;
-  }
-  
-  .error {
-    background: orangered;
-    color: #fff;
-    padding: 5px;
-    margin: 5px;
+   */
+   
+  .btn-danger {
+    float: right;
   }

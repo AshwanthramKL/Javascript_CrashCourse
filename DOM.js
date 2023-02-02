@@ -102,8 +102,8 @@
 
 // Traversing the DOM
 
-const itemList = document.querySelector('#items')
-console.log(itemList)
+// const itemList = document.querySelector('#items')
+// console.log(itemList)
 
 // parentNode
 
@@ -221,7 +221,7 @@ console.log(itemList)
 //     console.log(e.target.id);
 //     console.log(e.target.classList[0]);
 
-    var output = document.querySelector('#output');
+    // var output = document.querySelector('#output');
 //     output.innerHTML = `${e.target.id} is clicked ${x++} times`;
 
 //     console.log(e.type);
@@ -260,9 +260,9 @@ console.log(itemList)
 
 // Keyboard input
 
-var itemInput = document.querySelector('input[type="text"]');
-var my_form = document.querySelector('form');
-var my_select = document.querySelector('select');
+// var itemInput = document.querySelector('input[type="text"]');
+// var my_form = document.querySelector('form');
+// var my_select = document.querySelector('select');
 
 // itemInput.addEventListener('keydown', runEvent);
 // itemInput.addEventListener('keyup', runEvent);
@@ -280,19 +280,67 @@ var my_select = document.querySelector('select');
 // my_select.addEventListener('change', runEvent);
 // my_select.addEventListener('input', runEvent);
 
-my_form.addEventListener('submit', runEvent);
-function runEvent(e){
-    e.preventDefault();
-    console.log(`Event type : ${e.type}`);
+// my_form.addEventListener('submit', runEvent);
+// function runEvent(e){
+//     e.preventDefault();
+//     console.log(`Event type : ${e.type}`);
 
     // disco div
     // output.innerHTML = '<h3>MouseX: '+e.offsetX+'</h3><br><h3>MouseY: '+e.offsetY+'</h3>';
     // dummy_heading.style.color = "white";
     // box.style.backgroundColor = "rgb("+e.offsetX+", "+e.offsetY+", 35)";
 
-    console.log(e.target.value);
-    output.innerHTML = '<h3>'+e.target.value+'</h3>'; 
+    // console.log(e.target.value);
+    // output.innerHTML = '<h3>'+e.target.value+'</h3>'; 
 
     // document.body.style.display = "none"; // sema fun
+// }
+
+
+// Building a simple application
+
+var itemList = document.querySelector('#items');
+var myForm = document.querySelector('#addForm');
+
+// form submit event
+myForm.addEventListener('submit', addItem);
+
+// delete even
+
+itemList.addEventListener('click', deleteItem);
+
+function addItem(e){
+    e.preventDefault();
+
+    // create new list element
+    var newItem = document.createElement('li');
+    var oldItem = document.querySelector('.list-group-item');
+
+    // add in contents of list element
+    newItem.appendChild(document.createTextNode(document.querySelector('#item').value));
+
+    // append close button
+    var closeButton = document.createElement('button');
+    closeButton.appendChild(document.createTextNode('X'));
+    closeButton.className = 'btn btn-danger btn-sm float-right delete';
+    newItem.appendChild(closeButton);
+
+    // add classes to new list element
+    newItem.classList = 'list-group-item';
+    
+    // add list item to Item list
+    itemList.appendChild(newItem);
 }
 
+
+function deleteItem(e){
+
+    if(e.target.classList.contains('delete')){
+        if(confirm('Are you sure?'))
+        {
+            var li = e.target.parentElement;
+            itemList.removeChild(li);
+        }
+    }
+
+}
