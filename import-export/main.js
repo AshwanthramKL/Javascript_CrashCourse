@@ -16,6 +16,12 @@
 
 // IMPORTING WITH A CONVINIENT ALIAS NAME
 
-import {ReallyLongModuleMemberName as ShortName} from './lib.js' 
+// import {ReallyLongModuleMemberName as ShortName} from './lib.js' 
 
-console.log(ShortName);
+// console.log(ShortName);
+
+// SINGLE DEFAULT EXPORT
+
+import myFunc from './lib.js';
+
+console.log(myFunc());
