@@ -8,8 +8,9 @@ Built a basic input form with the following features:
 
 ## Source :  
 <a href="https://youtu.be/hdI2bqOjy3c" target="_blank">Traversy Media Video</a>  
-<a href="https://www.youtube.com/playlist?list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX" target="_blank">Traversy Media Playlist</a>
-
+<a href="https://www.youtube.com/playlist?list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX" target="_blank">Traversy Media Playlist</a>  
+<a href="https://youtu.be/Jqn_wjkSZwo" target="blank">import / export (modules) - Beau teaches JavaScript
+</a>
 ## Brushed up on concepts such as:
 * Basic Datatypes
 * Strings and String methods
@@ -27,7 +28,7 @@ Built a basic input form with the following features:
 * DOM manipulation
 * Events
 * Spread and Rest operator
-
+* import/export modules
 ## Website
 
 ![website preview](./images/website_overview.jpg)
