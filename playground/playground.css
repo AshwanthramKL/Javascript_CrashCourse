@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* line-height: 1.6; */
+    background-color: pink;
+    
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    place-content: center;
+  }
+  
+.content{
+    margin-top: 5rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.content p{
+    margin-top: 5rem;
+}
