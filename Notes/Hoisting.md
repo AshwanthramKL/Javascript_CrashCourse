@@ -1,6 +1,6 @@
 # Hoisting
 
-What it does is take some of your code and autoatically moves it to the top of the file.
+Automatically moves part of your code to the top of the file.
 
 ## Hoisting for "function" and "const" keyword
 

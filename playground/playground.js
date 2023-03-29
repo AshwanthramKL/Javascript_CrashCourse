@@ -7,3 +7,10 @@ var someConst = (a,b) => a+b;
 function someFunc(a, b){
     return a+b;
 }
+
+
+const div = document.querySelector('.myDiv');
+
+div.addEventListener('click', (e)=>{
+    console.log(e.target)
+})
