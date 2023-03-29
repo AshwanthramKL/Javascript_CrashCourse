@@ -38,3 +38,7 @@ Let's say there are many btns under the same div in the above example.
 It would be a tedious process to add an eventListener to each and every button.
 
 Here's where we can use **Event Bubbling** to set up an eventListener at the parent Div element and manipulate the button that is being clicked on ;)
+
+## Resources Used
+
+[FreeCodeCamp Article Link](https://www.freecodecamp.org/news/event-bubbling-in-javascript/)
